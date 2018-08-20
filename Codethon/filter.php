@@ -9,10 +9,10 @@
 		echo "<h3>Following are the plans available</h3><br>";
 		if ($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()) {
-        echo "Plan Name: " . $row["PlanName"]. " - Monthly Rental: " . $row["MonthlyRent"]. " - Free Internet " . $row["FreeInternet"]. " - Free Calls" . $row["FreeCalls"]. " - Free SMS's " . $row["FreeSMS"]. " - Call Charges " . $row["CallCharges"]."/1min". " - SMS Charges " . $row["SmsCharges"]."/SMS". " - Data Charges " . $row["DataCharges"]."/1K.b"." - Roaming Charges " . $row["Roaming"]. "<br>";
-		}
+        				echo "Plan Name: " . $row["PlanName"]. " - Monthly Rental: " . $row["MonthlyRent"]. " - Free Internet " . $row["FreeInternet"]. " - Free Calls" . $row["FreeCalls"]. " - Free SMS's " . $row["FreeSMS"]. " - Call Charges " . $row["CallCharges"]."/1min". " - SMS Charges " . $row["SmsCharges"]."/SMS". " - Data Charges " . $row["DataCharges"]."/1K.b"." - Roaming Charges " . $row["Roaming"]. "<br>";
+				}
 		}
 		else{
-		 echo "Zero Results";
+			echo "Zero Results";
 		}
 ?>
